@@ -10,7 +10,7 @@ public class AccountMain3 {
         ac1.deposit(100);
         ac1.print();
         //提款
-        ac1.withdrawl(20);
+        ac1.withdrawl(1000);
         ac1.print();
     }
 }
