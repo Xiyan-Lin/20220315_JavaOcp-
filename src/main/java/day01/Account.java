@@ -6,6 +6,18 @@ public class Account {
     String name;
     int balance;
     // 存款程序 (存款方法)
+    // 第三人稱使用 static (屬於類別 不屬於物件)
+    static void transfer(int amount, Account act1, Account act2){
+        act1.withdrawl(amount);
+        act2.deposit(amount);
+    }
+    
+    //transfer
+    void transfer(int amount, Account act){
+        withdrawl(amount);
+        act.deposit(amount);
+    }
+    
     // amount : 存款金額
     public void deposit(int amount){
         if(amount <= 0){
